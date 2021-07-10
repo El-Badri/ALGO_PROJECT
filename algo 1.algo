@@ -1,0 +1,30 @@
+ALGORITHM sentence
+VAR
+ sentence, choix: string;
+ i,nbr,nbr1,nbr_mot,nbr_caractere:INTEGER
+ 
+
+BEGIN
+write ('your sentence:');
+Read (sentence)
+nbr1 := length
+write ('your sentence contains', nbr1, 'characters')
+
+
+ FOR i FROM 0 TO sentence.length-1 STEP 1  DO
+     IF (sentence[i]='a' OR sentence[i]='e' OR sentence[i]='i' OR sentence[i]='o' OR sentence[i]='u' OR sentence[i]='y') THEN
+        nbr:=nbr+1 
+     END_IF
+ END_FOR
+ write(nbr)
+
+ FOR i FROM 0 TO sentence.length-1 STEP 1 DO
+     IF (sentence[i])= " ") THEN
+         nbr_mot:=nmot+1 
+     END_IF
+     IF (sentence[i]= .) THEN
+        Break
+     END_IF
+ END_FOR
+ write(nb_rmot)
+nbr_caractere:=sentence.length-nbrmot
